@@ -21,4 +21,5 @@ dict_ss = {'mobile_phone': '18600001112', 'pwd': '123456789', 'type': 1, 'reg_na
 # 将字典转换成json字符串
 ss_json = json.dumps(dict_ss,ensure_ascii=False)
 print(ss_json)
+print(type(ss_json))
 

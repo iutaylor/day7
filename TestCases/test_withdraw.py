@@ -6,16 +6,20 @@
 # @Software: PyCharm
 import json
 import unittest
+import re
 from jsonpath import jsonpath
 from Common.handle_excel import HandleExcel
 from Common.handle_path import datas_dir
 from Common.handle_phone import get_old_phone
 from Common.handle_requests import send_requests
 from Common.myddt import ddt,data
-from Common.handle_data import replace_mark_with_data
+from Common.handle_data import replace_mark_with_data,EnvData,replace_mark_by_regular
 from Common.handle_db import HandleDB
 from Common.my_logger import logger
 
+'''
+通过正则替换
+'''
 he = HandleExcel(datas_dir+"\\api_cases.xlsx", "提现")
 cases = he.read_all_datas()
 he.close_file()
@@ -29,8 +33,10 @@ class TestRecharge(unittest.TestCase):
         logger.info("======  提现模块用例 执行开始  ========")
         user,passwd = get_old_phone()
         resp = send_requests("POST", "member/login", {"mobile_phone": user, "pwd": passwd})
-        cls.member_id = jsonpath(resp.json(), "$..id")[0]
-        cls.token = jsonpath(resp.json(), "$..token")[0]
+        # cls.member_id = jsonpath(resp.json(), "$..id")[0]
+        # cls.token = jsonpath(resp.json(), "$..token")[0]
+        setattr(EnvData,"member_id",jsonpath(resp.json(),"$..id")[0])
+        setattr(EnvData, "token", jsonpath(resp.json(),"$..token")[0])
 
     @classmethod
     def tearDownClass(cls) -> None:
@@ -41,8 +47,14 @@ class TestRecharge(unittest.TestCase):
     def test_recharge(self, case):
         logger.info("*********   执行用例{}：{}   *********".format(case["case_id"], case["title"]))
         # 替换的数据
+        # if case["request_data"].find("#member_id#") != -1:
+        #     case = replace_mark_with_data(case, "#member_id#", str(self.member_id))
+        #转成字符串》去替换》再转成json
+        case_str = json.dumps(case, ensure_ascii=False)
         if case["request_data"].find("#member_id#") != -1:
-            case = replace_mark_with_data(case, "#member_id#", str(self.member_id))
+        # if re.findall("#(.*?)#", ss_json):
+            case = replace_mark_by_regular("#(.*?)#", case_str)
+            case = json.loads(case)
 
         # 数据库 - 查询当前用户的余额 - 在充值之前
         if case["check_sql"]:
@@ -60,7 +72,7 @@ class TestRecharge(unittest.TestCase):
         expected = json.loads(case["expected"])
         logger.info("用例的期望结果为：{}".format(expected))
         # 发起请求 - 给用户充值
-        response = send_requests(case["method"],case["url"], eval(case["request_data"]),token=self.token)
+        response = send_requests(case["method"],case["url"], eval(case["request_data"]),token=EnvData.token)
 
         # 断言
         try:

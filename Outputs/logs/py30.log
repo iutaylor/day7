@@ -10114,3 +10114,1421 @@ Traceback (most recent call last):
   File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 1007 != 2
+2021-09-02 10:18:51,713 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:18:51,737 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:18:51,768 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:18:51,768 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:18:51,768 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:18:51,769 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:18:51,916 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:18:51,917 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:18:51,917 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:18:51,918 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:18:51,918 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:18:51,918 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:18:51,919 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:18:52,032 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:18:52,033 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:23:51', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQzMX0.N-U5PEa9PHONlR1-IIY3YfjWiIqiLEfM9ma54T6EPcS2yQS-NvcHCIu1GeF_s-kYpeOG_QdrQx366LCfrXhPZw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:18:52,061 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:18:52,085 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:18:52,088 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:18:52,092 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:18:52,095 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:18:52,102 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:18:52,104 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:18:52,106 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:18:52,108 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:18:52,118 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:18:52,120 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:18:52,122 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:18:52,124 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:18:52,132 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:18:52,134 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:18:52,136 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:19:36,309 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:19:36,309 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,309 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:19:36,310 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:19:36,310 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:19:36,310 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:19:36,327 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,327 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,327 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,327 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:19:36,328 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:19:36,328 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:19:36,328 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:19:36,348 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,348 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:24:36', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,352 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:19:36,355 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:19:36,357 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:19:36,367 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:19:36,369 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:19:36,369 py30 INFO test_withdraw.py-66 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:19:36,369 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,369 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}
+2021-09-02 10:19:36,369 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:19:36,369 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:19:36,369 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:19:36,392 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,392 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,393 py30 ERROR test_withdraw.py-82 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 73, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:19:36,395 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:19:36,409 py30 INFO test_withdraw.py-66 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:19:36,409 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,409 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}
+2021-09-02 10:19:36,409 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:19:36,410 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:19:36,410 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:19:36,428 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,429 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,429 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:19:36,430 py30 INFO test_withdraw.py-66 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:19:36,430 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,430 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}
+2021-09-02 10:19:36,430 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:19:36,430 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:19:36,430 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:19:36,454 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,455 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,455 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:19:36,455 py30 INFO test_withdraw.py-66 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:19:36,456 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,456 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}
+2021-09-02 10:19:36,456 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:19:36,456 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:19:36,456 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:19:36,476 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,477 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,477 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:19:36,478 py30 INFO test_withdraw.py-66 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:19:36,478 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:19:36,478 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTQ3Nn0.FlWoTNTx8-IlVbHJBOKmdlPKHDnzSjCfAPqX67oROK0P77rv-APyLgYzkksqWkxKyz80RLbkIYDCiuP-PMPkEA'}
+2021-09-02 10:19:36,478 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:19:36,478 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:19:36,478 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:19:36,500 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:19:36,501 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:19:36,501 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:19:36,503 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:19:36,504 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:19:36,507 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:19:36,508 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:19:36,509 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:19:36,510 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:24:15,343 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:24:15,343 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,343 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:24:15,344 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:24:15,344 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:24:15,344 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:24:15,362 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,363 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,363 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,363 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:24:15,363 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:24:15,363 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:24:15,364 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:24:15,390 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,391 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:29:15', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,396 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:24:15,400 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:24:15,401 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:24:15,411 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:24:15,413 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:24:15,413 py30 INFO test_withdraw.py-67 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:24:15,413 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,413 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}
+2021-09-02 10:24:15,413 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:15,413 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:15,413 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:24:15,435 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,436 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,436 py30 ERROR test_withdraw.py-83 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:24:15,437 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:24:15,437 py30 INFO test_withdraw.py-67 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:24:15,437 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,437 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}
+2021-09-02 10:24:15,437 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:15,437 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:15,437 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:24:15,458 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,458 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,459 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:24:15,459 py30 INFO test_withdraw.py-67 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:24:15,459 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,459 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}
+2021-09-02 10:24:15,459 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:15,460 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:15,460 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:24:15,483 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,484 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,484 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:24:15,484 py30 INFO test_withdraw.py-67 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:24:15,485 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,485 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}
+2021-09-02 10:24:15,485 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:15,485 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:15,485 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:24:15,507 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,507 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,507 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:24:15,507 py30 INFO test_withdraw.py-67 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:24:15,508 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:15,508 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc1NX0.qyke9qWPnxa6gPmyCLBbhi0L7tJtVXt9NYNNUf1KwbaAa5E3AFMKWAF7vfGZZ5cGCQdMRnagobrYraHEotjgNw'}
+2021-09-02 10:24:15,508 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:15,508 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:15,508 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:24:15,525 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:15,526 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:15,526 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:24:15,527 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:24:15,528 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:24:15,536 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:24:15,538 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:24:15,538 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:24:15,540 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:24:49,677 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:24:49,677 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:49,677 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:24:49,677 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:24:49,677 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:24:49,677 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:24:49,785 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:24:49,900 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:49,900 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:29:49', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:49,902 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:24:49,933 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:24:49,934 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:24:49,937 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:24:49,938 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:24:49,939 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:24:49,939 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:49,939 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}
+2021-09-02 10:24:49,939 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:49,939 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:49,939 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:24:49,956 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:49,957 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:49,957 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 75, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:24:49,958 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:24:49,959 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:24:49,959 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:49,959 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}
+2021-09-02 10:24:49,959 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:49,959 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:49,959 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:24:49,980 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:49,980 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:49,981 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:24:49,981 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:24:49,981 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:49,981 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}
+2021-09-02 10:24:49,981 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:49,981 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:49,981 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:24:50,007 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:50,007 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:50,008 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:24:50,008 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:24:50,008 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:50,008 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}
+2021-09-02 10:24:50,009 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:50,009 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:50,009 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:24:50,029 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:50,029 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:50,030 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:24:50,030 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:24:50,030 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:24:50,030 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTc4OX0.5BNns3y6CO25wh5zsOEdfzMJDmpKan66ffy_l5LoPGlbJG3FMX0sEkBFYrVA2Ook1GcOU9sfy4M44tCm3ernFw'}
+2021-09-02 10:24:50,030 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:24:50,031 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:24:50,031 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:24:50,054 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:24:50,054 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:24:50,055 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:24:50,056 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:24:50,062 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:24:50,064 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:24:50,065 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:24:50,080 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:24:50,082 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:27:13,206 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:27:13,206 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,206 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:27:13,207 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:27:13,207 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:27:13,207 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:27:13,225 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,225 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,225 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,225 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:27:13,225 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:27:13,226 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:27:13,226 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:27:13,248 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,249 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:32:13', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,259 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:27:13,267 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:27:13,269 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:27:13,272 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:27:13,275 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:27:13,275 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:27:13,276 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,276 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}
+2021-09-02 10:27:13,276 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:13,276 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:13,276 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:27:13,300 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,300 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,301 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 75, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:27:13,303 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:27:13,304 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:27:13,304 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,305 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}
+2021-09-02 10:27:13,305 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:13,305 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:13,305 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:27:13,329 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,330 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,331 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:27:13,331 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:27:13,331 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,331 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}
+2021-09-02 10:27:13,331 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:13,331 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:13,331 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:27:13,353 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,353 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,354 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:27:13,354 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:27:13,354 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,354 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}
+2021-09-02 10:27:13,354 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:13,354 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:13,354 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:27:13,377 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,377 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,377 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:27:13,378 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:27:13,378 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:13,378 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTkzM30.V0jgxRsqRdWczeKbtbuWeL6XsIObh3Sy6L6kxIBParWaX_ZG9MZ-Xh_gM96orJE0NEN00gU9Hp0NaXyVAgaOOQ'}
+2021-09-02 10:27:13,378 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:13,378 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:13,378 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:27:13,393 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:13,393 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:13,394 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:27:13,395 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:27:13,395 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:27:13,398 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:27:13,399 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:27:13,401 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:27:13,402 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:27:52,122 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:27:52,122 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,122 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:27:52,123 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:27:52,123 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:27:52,123 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:27:52,146 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,146 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,146 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,146 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:27:52,147 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:27:52,147 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:27:52,147 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:27:52,170 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,170 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:32:52', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,172 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:27:52,175 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:27:52,180 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:27:52,181 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:27:52,183 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:27:52,183 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:27:52,183 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,183 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}
+2021-09-02 10:27:52,183 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:52,183 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:52,183 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:27:52,205 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,205 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,205 py30 ERROR test_withdraw.py-85 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 76, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:27:52,207 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:27:52,207 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:27:52,207 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,207 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}
+2021-09-02 10:27:52,207 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:52,207 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:52,207 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:27:52,229 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,229 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,229 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:27:52,229 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:27:52,230 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,230 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}
+2021-09-02 10:27:52,230 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:52,230 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:52,230 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:27:52,252 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,252 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,252 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:27:52,252 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:27:52,252 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,253 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}
+2021-09-02 10:27:52,253 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:52,253 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:52,253 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:27:52,274 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,275 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,275 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:27:52,275 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:27:52,275 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:27:52,275 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU0OTk3Mn0.OqgfF7EicAb0oNgcqV8A5EtcKaoC-UZopP174QgBCIsx5IG5CYSYJ_orDxhQXU4QKI4QBvbYh78qztkAGmQFxw'}
+2021-09-02 10:27:52,276 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:27:52,276 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:27:52,276 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:27:52,297 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:27:52,297 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:27:52,298 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:27:52,299 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:27:52,299 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:27:52,305 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:27:52,306 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:27:52,320 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:27:52,321 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:31:08,150 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:31:08,151 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,151 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:31:08,151 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:31:08,151 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:31:08,151 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:31:08,255 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:31:08,256 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:31:08,376 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,376 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:36:08', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,379 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:31:08,381 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:31:08,382 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:31:08,383 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:31:08,397 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:31:08,397 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:31:08,398 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,398 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}
+2021-09-02 10:31:08,398 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:31:08,398 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:31:08,398 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:31:08,415 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,415 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,415 py30 ERROR test_withdraw.py-85 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 76, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:31:08,417 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:31:08,417 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:31:08,417 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,417 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}
+2021-09-02 10:31:08,417 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:31:08,417 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:31:08,417 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:31:08,438 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,438 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,439 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:31:08,439 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:31:08,439 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,439 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}
+2021-09-02 10:31:08,439 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:31:08,439 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:31:08,439 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:31:08,463 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,463 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,464 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:31:08,464 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:31:08,464 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,464 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}
+2021-09-02 10:31:08,464 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:31:08,464 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:31:08,464 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:31:08,489 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,489 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,490 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:31:08,490 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:31:08,490 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:31:08,490 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDE2OH0.5xLXFbAZ3D-LeJo8B0PInzKppxZUY5sgMGR22Sk-vJfsDWY1KR65HmF8-3WW5A9bDQ4AXhnk8hkXUjRVNZccdA'}
+2021-09-02 10:31:08,490 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:31:08,490 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:31:08,490 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:31:08,515 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:31:08,516 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:31:08,516 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:31:08,542 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:31:08,543 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:31:08,544 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:31:08,546 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:31:08,547 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:31:08,548 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:32:22,927 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:32:22,927 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:22,927 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:32:22,927 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:32:22,927 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:32:22,927 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:32:23,037 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,037 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,037 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,037 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:32:23,037 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:32:23,038 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:32:23,038 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:32:23,148 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,149 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:37:23', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,155 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:32:23,157 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:32:23,164 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:32:23,166 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:32:23,168 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:32:23,168 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:32:23,168 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,168 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}
+2021-09-02 10:32:23,168 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:32:23,168 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:32:23,168 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:32:23,191 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,191 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,191 py30 ERROR test_withdraw.py-85 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 76, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:32:23,193 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:32:23,193 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:32:23,193 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,193 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}
+2021-09-02 10:32:23,193 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:32:23,193 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:32:23,193 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:32:23,219 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,219 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,220 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:32:23,220 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:32:23,220 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,220 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}
+2021-09-02 10:32:23,220 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:32:23,220 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:32:23,220 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:32:23,241 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,242 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,242 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:32:23,242 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:32:23,242 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,242 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}
+2021-09-02 10:32:23,242 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:32:23,242 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:32:23,243 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:32:23,266 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,266 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,267 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:32:23,267 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:32:23,267 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:32:23,267 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI0M30.rrdFipuE8Euz4S1CZQ4Vp50Usv2TkBPhrd9RVa7KnQfgozJREOTq7xQWIzF_gKznCkjH-wSIBCQYIo0DXG3qQg'}
+2021-09-02 10:32:23,267 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:32:23,267 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:32:23,267 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:32:23,283 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:32:23,283 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:32:23,284 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:32:23,285 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:32:23,287 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:32:23,289 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:32:23,290 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:32:23,304 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:32:23,305 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:33:19,733 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:33:19,733 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:19,733 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:33:19,733 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:33:19,733 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:33:19,733 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:33:19,845 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:19,845 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:19,846 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:19,846 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:33:19,846 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:33:19,846 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:33:19,846 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:33:19,959 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:19,960 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:38:19', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:19,968 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:33:19,988 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:33:19,988 py30 INFO test_withdraw.py-60 line：提现的金额为：600
+2021-09-02 10:33:19,988 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82901.0
+2021-09-02 10:33:19,989 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82901.0}}
+2021-09-02 10:33:19,989 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:19,989 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:19,989 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:19,989 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:19,989 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600}
+2021-09-02 10:33:20,014 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,015 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,015 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:33:20,018 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:33:20,037 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:33:20,037 py30 INFO test_withdraw.py-60 line：提现的金额为：600.1
+2021-09-02 10:33:20,037 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82900.9
+2021-09-02 10:33:20,038 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.9}}
+2021-09-02 10:33:20,038 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,038 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,038 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,039 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,039 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.1}
+2021-09-02 10:33:20,065 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,065 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,065 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:33:20,066 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:33:20,086 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:33:20,086 py30 INFO test_withdraw.py-60 line：提现的金额为：600.22
+2021-09-02 10:33:20,086 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82900.78
+2021-09-02 10:33:20,086 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.78}}
+2021-09-02 10:33:20,086 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,086 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,086 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,086 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,086 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.22}
+2021-09-02 10:33:20,109 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,109 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,109 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:33:20,111 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:33:20,129 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:33:20,129 py30 INFO test_withdraw.py-60 line：提现的金额为：500000
+2021-09-02 10:33:20,129 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：-416499.0
+2021-09-02 10:33:20,129 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': -416499.0}}
+2021-09-02 10:33:20,129 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,129 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,129 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,130 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,130 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 500000}
+2021-09-02 10:33:20,148 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,148 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,148 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1002 != 0
+2021-09-02 10:33:20,149 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:33:20,149 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:33:20,149 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,149 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,149 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,149 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,150 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:33:20,173 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,173 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,173 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 75, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:33:20,174 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:33:20,174 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:33:20,175 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,175 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,175 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,175 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,175 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:33:20,191 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,192 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,192 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:33:20,192 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:33:20,192 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,192 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,193 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,193 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,193 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:33:20,216 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,216 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,216 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:33:20,216 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:33:20,217 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,217 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,217 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,217 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,217 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:33:20,238 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,238 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,239 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:33:20,239 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:33:20,239 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,239 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,239 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,239 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,239 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:33:20,257 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,257 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,258 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:33:20,258 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:33:20,258 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,258 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,258 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,258 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,258 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 0}
+2021-09-02 10:33:20,281 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,281 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,281 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 2
+2021-09-02 10:33:20,282 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:33:20,282 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:33:20,282 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,283 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,283 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,283 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,283 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': -600}
+2021-09-02 10:33:20,300 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,300 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,301 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:33:20,301 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '余额为空'}
+2021-09-02 10:33:20,301 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,301 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,301 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,301 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,301 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111}
+2021-09-02 10:33:20,317 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,317 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,318 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:33:20,318 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额小数超过两位'}
+2021-09-02 10:33:20,318 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,318 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,318 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,318 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,318 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.222}
+2021-09-02 10:33:20,339 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,339 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,340 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:33:20,340 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:33:20,340 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,340 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,340 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,340 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,340 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 500001}
+2021-09-02 10:33:20,368 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,368 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,369 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:33:20,369 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:33:20,369 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:33:20,369 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDI5OX0.KyqROayQPMPJN8WAP26JlzYns74M82BFKqNNhUlbiC94bjJgcfprFjgVQA5yD6XJ8MXPyDq4o34khsvaeJimGQ'}
+2021-09-02 10:33:20,369 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:33:20,369 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:33:20,369 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': '5万'}
+2021-09-02 10:33:20,392 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:33:20,392 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:33:20,392 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:34:25,450 py30 INFO test_withdraw.py-31 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:34:25,450 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,451 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:34:25,451 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:34:25,451 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:34:25,451 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:34:25,573 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,573 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,573 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,573 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:34:25,574 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:34:25,574 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:34:25,574 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:34:25,696 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,696 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:39:25', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,698 py30 INFO test_withdraw.py-44 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:34:25,710 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:34:25,710 py30 INFO test_withdraw.py-60 line：提现的金额为：600
+2021-09-02 10:34:25,710 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82901.0
+2021-09-02 10:34:25,710 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82901.0}}
+2021-09-02 10:34:25,710 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,710 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,710 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,710 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,711 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600}
+2021-09-02 10:34:25,733 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,733 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,734 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:34:25,736 py30 INFO test_withdraw.py-44 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:34:25,749 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:34:25,749 py30 INFO test_withdraw.py-60 line：提现的金额为：600.1
+2021-09-02 10:34:25,749 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82900.9
+2021-09-02 10:34:25,749 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.9}}
+2021-09-02 10:34:25,749 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,750 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,750 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,750 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,750 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.1}
+2021-09-02 10:34:25,768 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,769 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,769 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:34:25,770 py30 INFO test_withdraw.py-44 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:34:25,781 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:34:25,782 py30 INFO test_withdraw.py-60 line：提现的金额为：600.22
+2021-09-02 10:34:25,782 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：82900.78
+2021-09-02 10:34:25,782 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.78}}
+2021-09-02 10:34:25,782 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,782 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,782 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,782 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,783 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.22}
+2021-09-02 10:34:25,800 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,800 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,800 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 0
+2021-09-02 10:34:25,801 py30 INFO test_withdraw.py-44 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:34:25,817 py30 INFO test_withdraw.py-57 line：提现前的用户余额：83501.00
+2021-09-02 10:34:25,817 py30 INFO test_withdraw.py-60 line：提现的金额为：500000
+2021-09-02 10:34:25,817 py30 INFO test_withdraw.py-62 line：期望的提现后的金额为：-416499.0
+2021-09-02 10:34:25,817 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': -416499.0}}
+2021-09-02 10:34:25,817 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,817 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,817 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,818 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,818 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 500000}
+2021-09-02 10:34:25,837 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,837 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1002, 'msg': '余额不足', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,837 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1002 != 0
+2021-09-02 10:34:25,839 py30 INFO test_withdraw.py-44 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:34:25,839 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:34:25,839 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,839 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,839 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,840 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,840 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:34:25,861 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,861 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,862 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 75, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:34:25,863 py30 INFO test_withdraw.py-44 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:34:25,863 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:34:25,863 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,863 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,864 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,864 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,864 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:34:25,885 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,885 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,886 py30 INFO test_withdraw.py-44 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:34:25,886 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:34:25,886 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,886 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,887 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,887 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,887 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:34:25,911 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,911 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,912 py30 INFO test_withdraw.py-44 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:34:25,912 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:34:25,912 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,912 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,912 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,912 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,913 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:34:25,933 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,933 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,934 py30 INFO test_withdraw.py-44 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:34:25,934 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:34:25,934 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,934 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,934 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,935 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,935 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:34:25,952 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,952 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,953 py30 INFO test_withdraw.py-44 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:34:25,953 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:34:25,953 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,953 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,953 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,954 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,954 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 0}
+2021-09-02 10:34:25,977 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:25,977 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:25,977 py30 ERROR test_withdraw.py-84 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 74, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1007 != 2
+2021-09-02 10:34:25,978 py30 INFO test_withdraw.py-44 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:34:25,978 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:34:25,979 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:25,979 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:25,979 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:25,979 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:25,979 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': -600}
+2021-09-02 10:34:26,000 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:26,000 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:26,001 py30 INFO test_withdraw.py-44 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:34:26,001 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 1, 'msg': '余额为空'}
+2021-09-02 10:34:26,001 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:26,001 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:26,001 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:26,001 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:26,001 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111}
+2021-09-02 10:34:26,023 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:26,023 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:26,023 py30 INFO test_withdraw.py-44 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:34:26,023 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额小数超过两位'}
+2021-09-02 10:34:26,023 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:26,023 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:26,023 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:26,024 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:26,024 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 600.222}
+2021-09-02 10:34:26,045 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:26,045 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:26,046 py30 INFO test_withdraw.py-44 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:34:26,046 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:34:26,046 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:26,046 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:26,046 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:26,046 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:26,046 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': 500001}
+2021-09-02 10:34:26,073 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:26,073 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:26,074 py30 INFO test_withdraw.py-44 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:34:26,074 py30 INFO test_withdraw.py-68 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:34:26,074 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:34:26,075 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDM2NX0.-_s5nXr4pWgkfr_pXeFxnbwjMe8wAKMow8iauNmWgD-CojKEFMtgl2D4CqcYj7snXLRJm5LbkcmNUtLooK58Pw'}
+2021-09-02 10:34:26,075 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:34:26,075 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:34:26,075 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 111, 'amount': '5万'}
+2021-09-02 10:34:26,098 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:34:26,099 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:34:26,100 py30 INFO test_withdraw.py-39 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:36:17,023 py30 INFO test_withdraw.py-30 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:36:17,023 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:36:17,023 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:36:17,024 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:36:17,024 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:36:17,024 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:36:17,131 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:36:17,131 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:36:17,132 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:36:17,132 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:36:17,132 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:36:17,132 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:36:17,132 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:36:17,250 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:36:17,250 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:41:17', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDQ3N30.yONRcPQCrGmInmX0V8sFyFngFeSfO78KgjGlmTkGXgqj_E9LVK05Bilwkattdo22bAT1WASpCVxEIqq7vq3mog'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:36:17,253 py30 INFO test_withdraw.py-45 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:36:17,266 py30 INFO test_withdraw.py-58 line：提现前的用户余额：83501.00
+2021-09-02 10:36:17,266 py30 INFO test_withdraw.py-61 line：提现的金额为：600
+2021-09-02 10:36:17,266 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：82901.0
+2021-09-02 10:36:17,266 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82901.0}}
+2021-09-02 10:36:17,269 py30 INFO test_withdraw.py-45 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:36:17,282 py30 INFO test_withdraw.py-58 line：提现前的用户余额：83501.00
+2021-09-02 10:36:17,282 py30 INFO test_withdraw.py-61 line：提现的金额为：600.1
+2021-09-02 10:36:17,283 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：82900.9
+2021-09-02 10:36:17,283 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.9}}
+2021-09-02 10:36:17,284 py30 INFO test_withdraw.py-45 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:36:17,295 py30 INFO test_withdraw.py-58 line：提现前的用户余额：83501.00
+2021-09-02 10:36:17,296 py30 INFO test_withdraw.py-61 line：提现的金额为：600.22
+2021-09-02 10:36:17,296 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：82900.78
+2021-09-02 10:36:17,296 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': 82900.78}}
+2021-09-02 10:36:17,298 py30 INFO test_withdraw.py-45 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:36:17,311 py30 INFO test_withdraw.py-58 line：提现前的用户余额：83501.00
+2021-09-02 10:36:17,311 py30 INFO test_withdraw.py-61 line：提现的金额为：500000
+2021-09-02 10:36:17,311 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：-416499.0
+2021-09-02 10:36:17,311 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 111, 'leave_amount': -416499.0}}
+2021-09-02 10:36:17,313 py30 INFO test_withdraw.py-45 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:36:17,313 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:36:17,314 py30 INFO test_withdraw.py-45 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:36:17,314 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:36:17,316 py30 INFO test_withdraw.py-45 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:36:17,316 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:36:17,339 py30 INFO test_withdraw.py-45 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:36:17,340 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:36:17,341 py30 INFO test_withdraw.py-45 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:36:17,341 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:36:17,342 py30 INFO test_withdraw.py-45 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:36:17,342 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:36:17,343 py30 INFO test_withdraw.py-45 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:36:17,343 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:36:17,356 py30 INFO test_withdraw.py-45 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:36:17,356 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '余额为空'}
+2021-09-02 10:36:17,357 py30 INFO test_withdraw.py-45 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:36:17,358 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额小数超过两位'}
+2021-09-02 10:36:17,359 py30 INFO test_withdraw.py-45 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:36:17,359 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:36:17,370 py30 INFO test_withdraw.py-45 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:36:17,371 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:36:17,372 py30 INFO test_withdraw.py-40 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:37:15,246 py30 INFO test_withdraw.py-30 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:37:15,246 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:37:15,246 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:37:15,246 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:37:15,246 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:37:15,246 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:37:15,358 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:37:15,358 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:37:15,359 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:37:15,359 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:37:15,359 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:37:15,359 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:37:15,359 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:37:15,467 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:37:15,468 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:42:15', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDUzNX0.Be0FJU4a-9MtJxECMpY3Gwby3ThC9oQY8BWE-ZjkOagfZhjxX0WtjaY5kzjVDBOPBI3OSLat_hZaCeoz174mKA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:37:15,470 py30 INFO test_withdraw.py-45 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:37:15,480 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38924145.67
+2021-09-02 10:37:15,480 py30 INFO test_withdraw.py-61 line：提现的金额为：600
+2021-09-02 10:37:15,481 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38923545.67
+2021-09-02 10:37:15,481 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38923545.67}}
+2021-09-02 10:37:15,483 py30 INFO test_withdraw.py-45 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:37:15,494 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38924145.67
+2021-09-02 10:37:15,494 py30 INFO test_withdraw.py-61 line：提现的金额为：600.1
+2021-09-02 10:37:15,494 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38923545.57
+2021-09-02 10:37:15,494 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38923545.57}}
+2021-09-02 10:37:15,495 py30 INFO test_withdraw.py-45 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:37:15,504 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38924145.67
+2021-09-02 10:37:15,504 py30 INFO test_withdraw.py-61 line：提现的金额为：600.22
+2021-09-02 10:37:15,505 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38923545.45
+2021-09-02 10:37:15,505 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38923545.45}}
+2021-09-02 10:37:15,506 py30 INFO test_withdraw.py-45 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:37:15,517 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38924145.67
+2021-09-02 10:37:15,517 py30 INFO test_withdraw.py-61 line：提现的金额为：500000
+2021-09-02 10:37:15,517 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38424145.67
+2021-09-02 10:37:15,517 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38424145.67}}
+2021-09-02 10:37:15,518 py30 INFO test_withdraw.py-45 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:37:15,518 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:37:15,519 py30 INFO test_withdraw.py-45 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:37:15,519 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:37:15,520 py30 INFO test_withdraw.py-45 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:37:15,520 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:37:15,521 py30 INFO test_withdraw.py-45 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:37:15,521 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:37:15,522 py30 INFO test_withdraw.py-45 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:37:15,522 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:37:15,535 py30 INFO test_withdraw.py-45 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:37:15,536 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:37:15,537 py30 INFO test_withdraw.py-45 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:37:15,537 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:37:15,538 py30 INFO test_withdraw.py-45 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:37:15,538 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '余额为空'}
+2021-09-02 10:37:15,539 py30 INFO test_withdraw.py-45 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:37:15,539 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额小数超过两位'}
+2021-09-02 10:37:15,551 py30 INFO test_withdraw.py-45 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:37:15,551 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:37:15,553 py30 INFO test_withdraw.py-45 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:37:15,553 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:37:15,554 py30 INFO test_withdraw.py-40 line：======  提现模块用例 执行结束  ========
+2021-09-02 10:38:25,258 py30 INFO test_withdraw.py-30 line：======  提现模块用例 执行开始  ========
+2021-09-02 10:38:25,258 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,258 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:38:25,259 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:38:25,259 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2021-09-02 10:38:25,259 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:38:25,285 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,285 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,285 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,285 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2021-09-02 10:38:25,286 py30 INFO handle_requests.py-42 line：请求方法为：POST
+2021-09-02 10:38:25,286 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2021-09-02 10:38:25,286 py30 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18605671115', 'pwd': '123456789'}
+2021-09-02 10:38:25,302 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,302 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38924145.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-02 10:43:25', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,305 py30 INFO test_withdraw.py-45 line：*********   执行用例1：提现成功-整数   *********
+2021-09-02 10:38:25,316 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38924145.67
+2021-09-02 10:38:25,316 py30 INFO test_withdraw.py-61 line：提现的金额为：600
+2021-09-02 10:38:25,316 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38923545.67
+2021-09-02 10:38:25,317 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38923545.67}}
+2021-09-02 10:38:25,317 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,317 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,317 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,317 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,317 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 600}
+2021-09-02 10:38:25,345 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,346 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38923545.67, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,357 py30 INFO test_withdraw.py-82 line：充值后的用户余额：38923545.67
+2021-09-02 10:38:25,357 py30 INFO test_withdraw.py-45 line：*********   执行用例2：提现成功-1位小数   *********
+2021-09-02 10:38:25,370 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38923545.67
+2021-09-02 10:38:25,370 py30 INFO test_withdraw.py-61 line：提现的金额为：600.1
+2021-09-02 10:38:25,370 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38922945.57
+2021-09-02 10:38:25,370 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38922945.57}}
+2021-09-02 10:38:25,370 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,370 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,370 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,370 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,370 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 600.1}
+2021-09-02 10:38:25,400 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,400 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38922945.57, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,413 py30 INFO test_withdraw.py-82 line：充值后的用户余额：38922945.57
+2021-09-02 10:38:25,413 py30 INFO test_withdraw.py-45 line：*********   执行用例3：提现成功-2位小数   *********
+2021-09-02 10:38:25,424 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38922945.57
+2021-09-02 10:38:25,424 py30 INFO test_withdraw.py-61 line：提现的金额为：600.22
+2021-09-02 10:38:25,424 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38922345.35
+2021-09-02 10:38:25,424 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38922345.35}}
+2021-09-02 10:38:25,424 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,424 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,424 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,424 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,424 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 600.22}
+2021-09-02 10:38:25,452 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,452 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38922345.35, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,465 py30 INFO test_withdraw.py-82 line：充值后的用户余额：38922345.35
+2021-09-02 10:38:25,466 py30 INFO test_withdraw.py-45 line：*********   执行用例4：提现成功-50万   *********
+2021-09-02 10:38:25,477 py30 INFO test_withdraw.py-58 line：提现前的用户余额：38922345.35
+2021-09-02 10:38:25,477 py30 INFO test_withdraw.py-61 line：提现的金额为：500000
+2021-09-02 10:38:25,477 py30 INFO test_withdraw.py-63 line：期望的提现后的金额为：38422345.35
+2021-09-02 10:38:25,478 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38422345.35}}
+2021-09-02 10:38:25,478 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,478 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,478 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,479 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,479 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 500000}
+2021-09-02 10:38:25,508 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,508 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38422345.35, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,519 py30 INFO test_withdraw.py-82 line：充值后的用户余额：38422345.35
+2021-09-02 10:38:25,519 py30 INFO test_withdraw.py-45 line：*********   执行用例5：会员id为空   *********
+2021-09-02 10:38:25,519 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '用户id为空'}
+2021-09-02 10:38:25,520 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,520 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,520 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,520 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,520 py30 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2021-09-02 10:38:25,544 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,545 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,545 py30 ERROR test_withdraw.py-85 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 76, in test_recharge
+    self.assertEqual(response.json()["msg"],expected["msg"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 1211, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Program Files\python\lib\unittest\case.py", line 670, in fail
+    raise self.failureException(msg)
+AssertionError: '会员id为空' != '用户id为空'
+- 会员id为空
++ 用户id为空
+
+2021-09-02 10:38:25,547 py30 INFO test_withdraw.py-45 line：*********   执行用例6：id不是当前登录的用户   *********
+2021-09-02 10:38:25,547 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2021-09-02 10:38:25,548 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,548 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,548 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,548 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,548 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1, 'amount': 600}
+2021-09-02 10:38:25,574 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,574 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,576 py30 INFO test_withdraw.py-45 line：*********   执行用例7：会员id不存在   *********
+2021-09-02 10:38:25,576 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '会员不存在'}
+2021-09-02 10:38:25,577 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,577 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,578 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,578 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,578 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1111111111, 'amount': 600}
+2021-09-02 10:38:25,600 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,600 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,601 py30 INFO test_withdraw.py-45 line：*********   执行用例8：会员id为字符串   *********
+2021-09-02 10:38:25,601 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:38:25,602 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,602 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,602 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,602 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,602 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'id', 'amount': 600}
+2021-09-02 10:38:25,625 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,625 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,626 py30 INFO test_withdraw.py-45 line：*********   执行用例9：会员id为小数   *********
+2021-09-02 10:38:25,626 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:38:25,626 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,626 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,627 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,627 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,627 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2021-09-02 10:38:25,656 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,656 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,657 py30 INFO test_withdraw.py-45 line：*********   执行用例10：提现金额为0   *********
+2021-09-02 10:38:25,657 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:38:25,658 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,658 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,658 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,658 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,658 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 0}
+2021-09-02 10:38:25,687 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,688 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 1656, 'leave_amount': 38422345.35, 'mobile_phone': '18605671115', 'reg_name': '大柠檬', 'reg_time': '2021-07-01 20:02:38.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,688 py30 ERROR test_withdraw.py-85 line：断言失败！
+Traceback (most recent call last):
+  File "F:\BaiduNetdiskDownload\day7\TestCases\test_withdraw.py", line 75, in test_recharge
+    self.assertEqual(response.json()["code"],expected["code"])
+  File "D:\Program Files\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 831, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Program Files\python\lib\unittest\case.py", line 824, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 2
+2021-09-02 10:38:25,690 py30 INFO test_withdraw.py-45 line：*********   执行用例11：提现金额为负数   *********
+2021-09-02 10:38:25,690 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:38:25,690 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,691 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,691 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,691 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,691 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': -600}
+2021-09-02 10:38:25,720 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,721 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,721 py30 INFO test_withdraw.py-45 line：*********   执行用例12：提现金额为空   *********
+2021-09-02 10:38:25,722 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 1, 'msg': '余额为空'}
+2021-09-02 10:38:25,722 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,722 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,722 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,722 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,723 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656}
+2021-09-02 10:38:25,742 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,742 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,743 py30 INFO test_withdraw.py-45 line：*********   执行用例13：提现金额-3位小数   *********
+2021-09-02 10:38:25,743 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额小数超过两位'}
+2021-09-02 10:38:25,743 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,743 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,743 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,743 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,743 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 600.222}
+2021-09-02 10:38:25,757 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,758 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,758 py30 INFO test_withdraw.py-45 line：*********   执行用例14：提现金额-大于50万   *********
+2021-09-02 10:38:25,758 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2021-09-02 10:38:25,758 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,758 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,758 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,759 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,759 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': 500001}
+2021-09-02 10:38:25,779 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,779 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,780 py30 INFO test_withdraw.py-45 line：*********   执行用例15：提现金额-非数字   *********
+2021-09-02 10:38:25,780 py30 INFO test_withdraw.py-69 line：用例的期望结果为：{'code': 2, 'msg': '数值参数格式不正确'}
+2021-09-02 10:38:25,780 py30 INFO handle_requests.py-33 line：发起一次HTTP请求
+2021-09-02 10:38:25,780 py30 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjE2NTYsImV4cCI6MTYzMDU1MDYwNX0.YlIsR4HET9yBpLx8q1QxzaliWaadD0Kc1s3eQ5dYvFnhhxhXtowIXRYe5RyK2l6m0jmjk7OJskzjsegclohXbw'}
+2021-09-02 10:38:25,780 py30 INFO handle_requests.py-42 line：请求方法为：post
+2021-09-02 10:38:25,780 py30 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2021-09-02 10:38:25,780 py30 INFO handle_requests.py-44 line：请求数据为：{'member_id': 1656, 'amount': '5万'}
+2021-09-02 10:38:25,806 py30 INFO handle_requests.py-51 line：响应状态码为：200
+2021-09-02 10:38:25,806 py30 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-02 10:38:25,807 py30 INFO test_withdraw.py-40 line：======  提现模块用例 执行结束  ========
