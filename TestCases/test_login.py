@@ -35,11 +35,11 @@ class TestLogin(unittest.TestCase):
     @data(*cases)
     def test_login(self, case):
         logger.info("*****执行用例{}：{}".format(case["case_id"],case["title"]))
-        #记录数据
-        expected = json.loads(case["expected"])
-        logger.info("期望的响应结果{}".format(expected))
         #发请求
         response = send_requests(case["method"], case["url"], case["request_data"])
+        # 记录期望数据
+        expected = json.loads(case["expected"])
+        logger.info("期望的响应结果{}".format(expected))
         # 断言
         self.assertEqual(response.json()["code"],expected["code"])
         self.assertEqual(response.json()["msg"], expected["msg"])
