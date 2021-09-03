@@ -13,7 +13,7 @@ from Common.handle_path import datas_dir
 from Common.handle_phone import get_old_phone
 from Common.handle_requests import send_requests
 from Common.myddt import ddt,data
-from Common.handle_data import replace_mark_with_data,EnvData,replace_mark_by_regular
+from Common.handle_data import replace_mark_with_data,EnvData,replace_mark_by_regular,clear_EnvData_attrs
 from Common.handle_db import HandleDB
 from Common.my_logger import logger
 
@@ -30,6 +30,8 @@ db = HandleDB()
 class TestRecharge(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        # 清理 EnvData里设置的属性
+        clear_EnvData_attrs()
         logger.info("======  提现模块用例 执行开始  ========")
         user,passwd = get_old_phone()
         resp = send_requests("POST", "member/login", {"mobile_phone": user, "pwd": passwd})
@@ -42,6 +44,10 @@ class TestRecharge(unittest.TestCase):
     def tearDownClass(cls) -> None:
         logger.info("======  提现模块用例 执行结束  ========")
 
+    def tearDown(self) -> None:
+        #用例结束后清空下个用例动态获取的环境变量
+        if hasattr(EnvData, "money"):
+            delattr(EnvData, "money")
 
     @data(*cases)
     def test_recharge(self, case):
@@ -49,12 +55,12 @@ class TestRecharge(unittest.TestCase):
         # 替换的数据
         # if case["request_data"].find("#member_id#") != -1:
         #     case = replace_mark_with_data(case, "#member_id#", str(self.member_id))
+
         #转成字符串》去替换》再转成json
-        case_str = json.dumps(case, ensure_ascii=False)
-        if case["request_data"].find("#member_id#") != -1:
-        # if re.findall("#(.*?)#", ss_json):
-            case = replace_mark_by_regular("#(.*?)#", case_str)
-            case = json.loads(case)
+        ss_json = json.dumps(case)
+        if re.findall("#(.*?)#", ss_json):
+            case = replace_mark_by_regular("#(.*?)#", case)
+
 
         # 数据库 - 查询当前用户的余额 - 在充值之前
         if case["check_sql"]:
@@ -66,7 +72,9 @@ class TestRecharge(unittest.TestCase):
             exp_money = round(float(bef_money) - float(recharge_money),2)
             logger.info("期望的提现后的金额为：{}".format(exp_money))
             # 更新期望的结果 - 将期望的用户余额更新到期望结果当中。
-            case = replace_mark_with_data(case, "#money#", str(exp_money))
+            # case = replace_mark_with_data(case, "#money#", str(exp_money))
+            setattr(EnvData, "money", str(exp_money))
+            case = replace_mark_by_regular("#(money)#", case)
         # 将期望的结果转成字典对象，再去比对
         # logger.info("表格数据{}{}".format(case["expected"],type(case)))
         expected = json.loads(case["expected"])
