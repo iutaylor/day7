@@ -41,15 +41,19 @@ def replace_mark_by_regular(mark,data):
     data = json.dumps(data, ensure_ascii=False)
     res = re.findall(mark, data)  # 如果没有找到，返回的是空列表。
     # 标识符对应的值，来自于：1、环境变量  2、配置文件
+    res =list(set(res))
     if res:
         for item in res:
             # 得到标识符对应的值。
             try:
                 value = conf.get("data", item)
+                # value = getattr(EnvData, item)
             except:
                 try:
+
+                    # value = conf.get("data", item)
                     value = getattr(EnvData, item)
-                except AttributeError:
+                except AttributeError:   # 因为指定了属性异常，这两个判断顺序调换后会报错，捕获所有异常就不会有这个问题
                     continue
             # print(value)
             # 再去替换原字符串
@@ -91,4 +95,4 @@ if __name__ == '__main__':
     #
     # print(data,type(data))
     clear_EnvData_attrs()
-    print("123")
+    print(hasattr(EnvData, "user_money"))
