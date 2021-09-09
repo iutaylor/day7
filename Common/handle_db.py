@@ -35,11 +35,17 @@ class HandleDB:
         self.cur = self.conn.cursor()
 
     def select_one_data(self,sql):
+        #多条数据时会取第一条
         self.conn.commit()
         self.cur.execute(sql)
         return self.cur.fetchone()
 
     def select_all_data(self,sql):
+        '''
+        查询所有数据
+        :param sql:
+        :return: 列表格式，每个元素为字典
+        '''
         self.conn.commit()
         self.cur.execute(sql)
         return self.cur.fetchall()
@@ -73,17 +79,23 @@ if __name__ == '__main__':
     # db.close()
     # 初始化数据库对象
     db = HandleDB()
-    sql = 'select * from member where mobile_phone="18600001120"'
-    # 发起一个注册请求
-    from Common.handle_requests import send_requests
-    case = {
-        "method":"POST",
-        "url":"http://api.lemonban.com/futureloan/member/register",
-        "request_data":{"mobile_phone":"18600001120","pwd":"123456789","type":1,"reg_name":"美丽可爱的小简"}
-    }
-    response = send_requests(case["method"], case["url"], case["request_data"]) # 接口
-    print("响应结果：",response.json())
-    # 查询注册的手机号码
-    count = db.get_count(sql)
-    print("获取到的结果为：",count)
+    data = db.select_one_data("SELECT * FROM  futureloan.loan WHERE member_id=123626069 order by id desc;")
+    # data = db.select_one_data("SELECT loan_rate FROM  futureloan.loan WHERE member_id=123626069;")
+    # data = db.select_one_data("SELECT CAST(loan_rate AS CHAR) as loan_rate FROM  futureloan.loan WHERE member_id=123626069 LIMIT 1;")
+    print(data)
+    print(data["title"],data["amount"],data["loan_rate"],data["loan_rate"],data["loan_date_type"],["bidding_days"])
+    # print(data["loan_rate"], type(data["loan_rate"]))
+    # sql = 'select * from member where mobile_phone="18600001120"'
+    # # 发起一个注册请求
+    # from Common.handle_requests import send_requests
+    # case = {
+    #     "method":"POST",
+    #     "url":"http://api.lemonban.com/futureloan/member/register",
+    #     "request_data":{"mobile_phone":"18600001120","pwd":"123456789","type":1,"reg_name":"美丽可爱的小简"}
+    # }
+    # response = send_requests(case["method"], case["url"], case["request_data"]) # 接口
+    # print("响应结果：",response.json())
+    # # 查询注册的手机号码
+    # count = db.get_count(sql)
+    # print("获取到的结果为：",count)
 
